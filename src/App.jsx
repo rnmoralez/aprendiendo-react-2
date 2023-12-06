@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import Card from './components/Card'
-import './App.css'
+import './App.css';
 
 function App() {
 
@@ -18,13 +17,7 @@ function App() {
 
   return (
     <>
-    <ul>
-      {personajes.map((personaje) => (
-        <li key={personaje.id}>
-          <Card info={personaje} />
-        </li>
-      ))}
-    </ul>
+      <p>Hola!</p>
     </>
   )
 }
