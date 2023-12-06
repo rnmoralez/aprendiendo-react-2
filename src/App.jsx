@@ -1,3 +1,4 @@
+//https://aprendiendo-react-9jax.vercel.app/
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
   }, []);
 
   return (
-    <>
-      <p>Hola!</p>
-    </>
+    <ul>
+      {personajes.map((personaje) => (
+        <li key={personaje.id}>Personaje: {personaje.name}</li>
+      ))}
+    </ul>
   )
 }
 
